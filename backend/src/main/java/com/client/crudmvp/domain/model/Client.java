@@ -29,8 +29,8 @@ public class Client {
         return new Client(null, name, dateOfBirth, taxNumber, addresses);
     }
 
-    public static Client rebuild(UUID id, String name, LocalDate dob, String taxId, Collection<Address> addresses) {
-        return new Client(id, name, dob, taxId, addresses);
+    public static Client rebuild(UUID id, String name, LocalDate dateOfBirth, String taxNumber, Collection<Address> addresses) {
+        return new Client(id, name, dateOfBirth, taxNumber, addresses);
     }
 
     private void validate() {
