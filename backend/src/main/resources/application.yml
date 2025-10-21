@@ -1,1 +1,2 @@
-spring.application.name=CrudMVP
+server:
+  port: 8088
