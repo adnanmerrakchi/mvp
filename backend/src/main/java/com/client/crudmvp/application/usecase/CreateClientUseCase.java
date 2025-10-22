@@ -35,7 +35,8 @@ public class CreateClientUseCase {
 
         Client savedClient =  clientRepositoryPort.save(client);
 
-        return new ClientOutput(savedClient.getId(), savedClient.getName(), savedClient.getTaxNumber());
+        return new ClientOutput(savedClient.getId(), savedClient.getName(),
+                savedClient.getDateOfBirth(), savedClient.getTaxNumber());
     }
 
 
