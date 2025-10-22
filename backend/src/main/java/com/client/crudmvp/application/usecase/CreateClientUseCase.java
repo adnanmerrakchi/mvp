@@ -28,11 +28,10 @@ public class CreateClientUseCase {
                                                         a.district()))
                 .toList();
 
-
         Client client = Client.createNew(   clientCommand.name(),
                                             clientCommand.dateOfBirth(),
                                             clientCommand.taxNumber(),
-                addrs);
+                                            addrs);
 
         Client savedClient =  clientRepositoryPort.save(client);
 
