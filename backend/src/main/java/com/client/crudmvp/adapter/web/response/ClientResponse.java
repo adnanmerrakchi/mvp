@@ -1,10 +1,9 @@
-package com.client.crudmvp.application.dto;
+package com.client.crudmvp.adapter.web.response;
 
 import java.util.UUID;
 
-public record ClientOutput(
+public record ClientResponse(
         UUID id,
         String name,
         String taxNumber
-) {
-}
+) {}
